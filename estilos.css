@@ -41,7 +41,7 @@ nav#menu a {
 }
 
 div.imagem_topo{
-       background-image: url("imgs/f1.png");
+       background-image: url("f1.png");
        background-repeat: no-repeat;
        height: 0px;
        padding-top: 200px;
