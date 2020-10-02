@@ -1,3 +1,0 @@
-
-
-# http://jesiell.github.io
