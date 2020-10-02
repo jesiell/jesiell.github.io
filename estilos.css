@@ -1,0 +1,240 @@
+/*estilos de css*/
+
+/*formatação do menu*/
+
+nav#menu ul{
+
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 50px;
+	left: 500px;
+
+
+}
+
+nav#menu li{
+
+	display: inline-block;
+	padding: 10px;
+
+}
+
+
+nav#menu {
+
+	display: block;
+
+}
+
+nav#menu h4{
+
+	font-family: calibri;
+	color: orange;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+nav#menu a {
+	text-decoration:overline;
+	text-decoration-color: white;
+}
+
+div.imagem_topo{
+       background-image: url("imgs/f1.png");
+       background-repeat: no-repeat;
+       height: 0px;
+       padding-top: 200px;
+       border:0;
+       width: 250px;
+       background-position: 40px;
+       background-size: 180px;
+
+}
+
+
+div.cor_fundo{
+   		background-color: #000;
+   		height: 200px;
+}
+
+body {
+    margin: 0;
+}
+header{
+		font-family:cursive;
+		font-style: italic;
+    padding: 5px;
+    color: black;
+    text-align: center;
+		background-color: silver;
+
+}
+
+.imagem_topo{
+    transition: all 1.2s;
+    cursor: pointer;
+}
+h3{
+	font-family:sans-serif;
+  line-height: 1.6;
+	padding: 25px;
+	color: black;
+}
+h5{
+	font-family:sans-serif;
+	font-size: 25px;
+	padding: 25px;
+	color: black;
+	text-align: center;
+}
+
+
+
+.roda_pe{
+
+	background-color: silver;
+	font-family: calibri;
+	color: #FF4500;
+	display:flex;
+	justify-content:space-between;
+	padding: 25px;
+}
+
+
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing: border-box;
+
+}
+
+table {
+    width: 93%;
+    margin-left:auto;
+    margin-right:auto;
+		line-height: 19px;
+		border-spacing: 50px;
+
+}
+
+.left-column {
+    width: 13%;
+}
+
+.right-column {
+    width: 87%;
+}
+
+
+
+body {
+  width: 100%;
+  height: 95%;
+  background: #5965;
+  font-size: 16px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+}
+
+.carousel input {
+  position: absolute;
+  left: -10000px;
+}
+
+.carousel__stage {
+  overflow: hidden;
+  font-size: 0;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+  transition: text-indent 600ms;
+  position: relative;
+}
+
+.carousel__item {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-indent: 0;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.carousel__image {
+  height: 100%;
+  width: auto;
+  display: inline-block;
+}
+
+.carousel__next,
+.carousel__prev {
+  display: none;
+  position: absolute;
+  top: 50%;
+  color: #FFF;
+  background: rgba(255, 255, 255, 0.15);
+  z-index: 1;
+  font-size: 1rem;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.carousel__prev {
+  left: 450px;
+}
+
+.carousel__prev:after {
+  content: ' << ';
+  display:inline-block;
+	color: black;
+}
+
+.carousel__next {
+  right: 450px;
+}
+
+.carousel__next:after {
+  content: ' >> ';
+  display: inline-block;
+	color: black;
+}
+
+#carousel1:checked ~ .carousel__stage .carousel__item:nth-child(1),
+#carousel2:checked ~ .carousel__stage .carousel__item:nth-child(2),
+#carousel3:checked ~ .carousel__stage .carousel__item:nth-child(3),
+#carousel4:checked ~ .carousel__stage .carousel__item:nth-child(4) {
+  opacity: 1;
+}
+
+#carousel1:checked ~ .carousel__stage {
+  text-indent: 0;
+}
+
+#carousel2:checked ~ .carousel__stage {
+  text-indent: -100%;
+}
+
+#carousel3:checked ~ .carousel__stage {
+  text-indent: -200%;
+}
+
+#carousel4:checked ~ .carousel__stage {
+  text-indent: -300%;
+}
+
+#carousel1:checked ~ .carousel__stage .carousel__item:nth-child(1) .carousel__prev,
+#carousel1:checked ~ .carousel__stage .carousel__item:nth-child(1) .carousel__next,
+#carousel2:checked ~ .carousel__stage .carousel__item:nth-child(2) .carousel__prev,
+#carousel2:checked ~ .carousel__stage .carousel__item:nth-child(2) .carousel__next,
+#carousel3:checked ~ .carousel__stage .carousel__item:nth-child(3) .carousel__prev,
+#carousel3:checked ~ .carousel__stage .carousel__item:nth-child(3) .carousel__next,
+#carousel4:checked ~ .carousel__stage .carousel__item:nth-child(4) .carousel__prev,
+#carousel4:checked ~ .carousel__stage .carousel__item:nth-child(4) .carousel__next {
+  display: block;
+}
